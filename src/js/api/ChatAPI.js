@@ -2,7 +2,7 @@ import Entity from './Entity';
 import createRequest from './createRequest';
 
 export default class ChatAPI extends Entity {
-  static async list() {
+  async list() {
     return createRequest({ method: 'GET', url: '/users' });
   }
 
@@ -10,7 +10,7 @@ export default class ChatAPI extends Entity {
     return createRequest({ method: 'GET', url: `/user/${id}` });
   }
 
-  static async create(name) {
+  async create(name) {
     return createRequest({ method: 'POST', url: '/new-user', body: { name } });
   }
 
