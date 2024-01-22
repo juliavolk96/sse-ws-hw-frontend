@@ -1,3 +1,5 @@
+/* eslint-disable class-methods-use-this */
+
 import Entity from './Entity';
 import createRequest from './createRequest';
 
